@@ -15,10 +15,10 @@ let remainingLetters = word.length;
     //The playing loop
     while (remainingLetters > 0) {
         //Show players progress
-        alert("This is the number of remaining letters:\n" + answer.join(" "));
+        alert(`This is the number of remaining letters: ${answer.length}\n ${answer.join(" ")}`);
         
         //Prompt player to guess
-        let guess = prompt("Guess a letter or click 'Cancel' to stop the game.");
+        let guess = prompt("Guess a letter:");
         if (prompt === null) {
             //Leave the game
             break;
